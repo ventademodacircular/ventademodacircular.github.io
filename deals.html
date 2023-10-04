@@ -19,7 +19,14 @@
 <body>
     <div id="app">
 
-        <button class="button button-blue" @click="count++"> add </button> {{ count }}
+        <div class="flexbox row wrap" v-for="p in products">
+            <div class="flexitem">
+                <h3>{{p.name}}</h3>
+                <p>{{p.description}}</p>
+                <img :src="p.image" :alt="p.name" class = "small-image">
+                <button class="button button-green">Buy {{p.price}}Bs</button>
+            </div>
+        </div>
         
     </div>
     <script>
@@ -28,7 +35,15 @@
         createApp({
             setup() {
                 return {
-                    count:ref(0)
+                    products:ref([
+                        {
+                            name:"socks",
+                            description:"socks,definitely",
+                            image:"https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw30eee25a/images/hi-res/49965_MOKH.jpg?sw=768&sh=768&sfrm=png&q=95&bgcolor=f5f5f5",
+                            price: 1000,
+                            sold: false
+                        }
+                    ])
                 }
             }
         }).mount('#app')

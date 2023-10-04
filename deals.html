@@ -13,9 +13,25 @@
     <!-- Milligram CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>Today's Deals</title>
 </head>
 <body>
-    
+    <div id="app">
+
+        <button class="button button-blue" @click="count++"> add </button> {{ count }}
+        
+    </div>
+    <script>
+        const { createApp, ref } = Vue
+
+        createApp({
+            setup() {
+                return {
+                    count:ref(0)
+                }
+            }
+        }).mount('#app')
+    </script>
 </body>
 </html>

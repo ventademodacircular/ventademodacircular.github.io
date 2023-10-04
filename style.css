@@ -57,3 +57,31 @@ body {
 .red{
     color:#9e2b25;
 }
+.button-red {
+    background-color: #9e2b25;
+    border-color: #9e2b25;
+}
+.button-red.button-clear,
+.button-red.button-outline {
+    background-color: transparent;
+    color: #9e2b25;
+}
+.button-red.button-clear {
+    border-color: transparent;
+}
+
+.green{
+    color:#7ED071;
+}
+.button-green {
+    background-color: #7ED071;
+    border-color: #487542;
+}
+.button-green.button-clear,
+.button-green.button-outline {
+    background-color: transparent;
+    color: #487542;
+}
+.button-green.button-clear {
+    border-color: transparent;
+}

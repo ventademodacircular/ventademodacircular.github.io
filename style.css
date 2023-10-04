@@ -1,3 +1,43 @@
-p {
-    font-weight: bold;
+.center{
+    text-align: center;
+}
+.title-main {
+    color: white;
+    background: #7ED071;
+    font-size: 4em;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: white;
+    background: #9e2b25;
+}
+.column {
+    text-align: center;
+}
+
+.button-yellow {
+    background-color: #ffc145;
+    border-color: #ffc145;
+}
+.button-yellow.button-clear,
+.button-yellow.button-outline {
+    background-color: transparent;
+    color: #ffc145;
+}
+.button-yellow.button-clear {
+    border-color: transparent;
+}
+
+.button-blue {
+    background-color: #048ba8;
+    border-color: #048ba8;
+}
+.button-blue.button-clear,
+.button-blue.button-outline {
+    background-color: transparent;
+    color: #048ba8;
+}
+.button-blue.button-clear {
+    border-color: transparent;
 }

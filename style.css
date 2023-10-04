@@ -85,3 +85,19 @@ body {
 .button-green.button-clear {
     border-color: transparent;
 }
+
+.flexbox{
+    display: flex;
+}
+.row{
+    flex-direction: row;
+}
+.col{
+    flex-direction: column;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.flexitem {
+    flex: 1 1 auto;
+}

@@ -19,6 +19,10 @@ body {
     text-align: center;
 }
 
+
+.yellow {
+    color: #ffc145;
+}
 .button-yellow {
     background-color: #ffc145;
     border-color: #ffc145;
@@ -32,6 +36,9 @@ body {
     border-color: transparent;
 }
 
+.blue{
+    color: #048ba8;
+}
 .button-blue {
     background-color: #048ba8;
     border-color: #048ba8;
@@ -43,4 +50,8 @@ body {
 }
 .button-blue.button-clear {
     border-color: transparent;
+}
+
+.red{
+    color:#9e2b25;
 }
